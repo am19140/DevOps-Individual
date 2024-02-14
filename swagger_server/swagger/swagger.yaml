@@ -85,8 +85,8 @@ paths:
           content:
             application/json:
               schema:
-                type: integer
-                format: int64
+                type: string
+                format: uuid
                 x-content-type: application/json
         "400":
           description: "invalid input, object invalid"
