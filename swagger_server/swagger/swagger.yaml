@@ -85,8 +85,8 @@ paths:
           content:
             application/json:
               schema:
-                type: number
-                format: integer
+                type: integer
+                format: int64
                 x-content-type: application/json
         "400":
           description: "invalid input, object invalid"
@@ -102,8 +102,8 @@ components:
       type: object
       properties:
         student_id:
-          type: number
-          format: integer
+          type: integer
+          format: int64
         first_name:
           type: string
         last_name:
@@ -132,6 +132,6 @@ components:
         grade:
           maximum: 10
           minimum: 0
-          type: number
-          format: integer
+          type: integer
+          format: int64
 
